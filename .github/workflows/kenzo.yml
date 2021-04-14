@@ -1,7 +1,6 @@
 name: Update packages
 
 on:
-# 定时触发  
   repository_dispatch:
   release:
     types: published
@@ -14,7 +13,6 @@ on:
     types: started
 
 env:
-  # 时区
   TZ: Asia/Shanghai
 
 jobs:
@@ -23,18 +21,15 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     name: Update ${{matrix.target}}
-    # 上游目标更新
     strategy:
       fail-fast: false
       matrix:
         target: [18.06,19.07]
         
     steps:
-    # 校验本地文件  
     - name: Checkout
       uses: actions/checkout@main
-    
-    # 初始化编译环境
+
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -45,7 +40,6 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         
-    # 下载软件包     
     - name: Clone packages
       run: |
         cd $GITHUB_WORKSPACE
@@ -55,8 +49,6 @@ jobs:
         rm -Rf *
         git rm --cache *
         $GITHUB_WORKSPACE/${{matrix.target}}.sh
-        
-    # 上传到分支
     - name: Upload
       env: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -65,5 +57,5 @@ jobs:
         [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/${{matrix.target}}
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
-        git commit -m "同步上游更新$(TZ='Asia/Shanghai' date +@%m%d%H)"
+        git commit -m "同步上游更新$(TZ='Asia/Shanghai' date +@%m%d%T)"
         git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
