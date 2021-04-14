@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [packages,packages-19.07]
+        target: [18.06,19.07]
         
     steps:
     - name: Checkout
@@ -58,5 +58,5 @@ jobs:
         [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/${{matrix.target}}
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
-        git commit -m "update$(TZ='Asia/Shanghai' date +@%Y%m%d)"
+        git commit -m "同步上游更新$(TZ='Asia/Shanghai' date +@%m%d)"
         git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
