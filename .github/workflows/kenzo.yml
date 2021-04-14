@@ -57,5 +57,5 @@ jobs:
         [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/${{matrix.target}}
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
-        git commit -m "同步上游更新$(TZ='Asia/Shanghai' date +-%m月-%d日)"
+        git commit -m "同步上游更新$(TZ='Asia/Shanghai' date +-%m月%d日)"
         git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
