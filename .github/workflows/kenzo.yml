@@ -61,4 +61,4 @@ jobs:
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
         git commit -m "update$(TZ='Asia/Shanghai' date +@%Y%m%d)"
-        git push --quiet "https://${{ secrets.GITHUB_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
+        git push --quiet "https://${{ secrets.kenzo78_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
