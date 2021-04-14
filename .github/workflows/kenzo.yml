@@ -6,7 +6,7 @@ on:
     types: published
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: 0 */12 * * *
   watch:
@@ -28,7 +28,7 @@ jobs:
         
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@main
 
     - name: Initialization environment
       env:
@@ -57,8 +57,6 @@ jobs:
         [ -e $GITHUB_WORKSPACE/LICENSE ] && cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/${{matrix.target}}
         [ -e $GITHUB_WORKSPACE/README.md ] && cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/${{matrix.target}}
         cd $GITHUB_WORKSPACE/${{matrix.target}}
-        git config user.name "kenzok8"
-        git config user.email "kenzok8@gmail.com"
         git add .
         git commit -m "update$(TZ='Asia/Shanghai' date +@%Y%m%d)"
-        git push --quiet "https://$GITHUB_TOKEN@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
+        git push --quiet "https://${{ secrets.TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
