@@ -6,7 +6,7 @@ on:
     types: published
   push:
     branches:
-      - main
+      - master
   schedule:
     - cron: 0 */12 * * *
   watch:
@@ -28,7 +28,7 @@ jobs:
         
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@master
 
     - name: Initialization environment
       env:
