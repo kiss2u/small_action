@@ -11,6 +11,13 @@ git clone https://github.com/jerrykuku/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone https://github.com/zzsj0928/luci-app-serverchand
 git clone https://github.com/BCYDTZ/luci-app-UUGameAcc
+git clone https://github.com/garypang13/luci-app-eqos
+git clone https://github.com/BoringCat/luci-app-mentohust
+git clone https://github.com/small-5/luci-app-xlnetacc
+git clone https://github.com/project-lede/luci-app-godproxy
+git clone https://github.com/sirpdboy/luci-app-advanced
+git clone https://github.com/walkingsky/luci-wifidog luci-app-wifidog
+svn co https://github.com/garypang13/openwrt-packages/trunk/gost
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn co https://github.com/frainzy1477/luci-app-clash/trunk ./luci-app-clash
 svn co https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns/trunk/tencentcloud_ddns luci-app-tencentddns
@@ -24,13 +31,10 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping
 svn co https://github.com/liuran001/openwrt-theme/trunk/luci-theme-argon-lr
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-aliddns
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-advancedsetting
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-eqos
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns
 svn co https://github.com/immortalwrt/packages/trunk/net/smartdns
-svn co https://github.com/immortalwrt/packages/trunk/net/gost
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost
 svn co https://github.com/kenzok8/litte/trunk/luci-theme-argon_new
 svn co https://github.com/kenzok8/litte/trunk/luci-theme-opentopd_new
