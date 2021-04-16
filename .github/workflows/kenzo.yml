@@ -13,11 +13,7 @@ on:
     types: started
 
 env:
-  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-  SCKEY: ${{ secrets.SCKEY }}
-  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-  TZ: Asia/Shanghai  
+  TZ: Asia/Shanghai
 
 jobs:
   build:
@@ -63,20 +59,3 @@ jobs:
         git add .
         git commit -m "同步上游更新$(TZ='Asia/Shanghai' date +-%m月%d日)"
         git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/kenzok8/small-package.git" HEAD:${{matrix.target}}
-        
-    - name: WeChat notification
-      continue-on-error: true
-      if: env.SCKEY
-      run: |
-        [ steps.compile.outputs.status == '{{matrix.target}}同步上游更新' ] && curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=🎉package_${{matrix.target}}同步完成😋|| curl https://sc.ftqq.com/${{ secrets.SCKEY }}.send?text=❌package_${{matrix.target}}同步失败😂
-    - name: Telegram notification
-      if: env.TELEGRAM_TOKEN && ! contains(github.event.action, 'notg')
-      continue-on-error: true
-      run: |
-        # [ steps.compile.outputs.status == '{{matrix.target}}同步上游更新' ] && curl -k --data chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" --data "text=🎉 package ${{matrix.target}} 同步完成 😋" "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" || curl -k --data chat_id="${{ secrets.TELEGRAM_TO }}" --data "text=❌ package ${{matrix.target}} 同步失败 😂" "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage"
-    - name: Delete workflow runs
-      uses: GitRML/delete-workflow-runs@main
-      with:
-        retain_days: 10
-        keep_minimum_runs: 0
-        
