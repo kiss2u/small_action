@@ -17,6 +17,7 @@ git clone https://github.com/small-5/luci-app-xlnetacc
 git clone https://github.com/project-lede/luci-app-godproxy
 git clone https://github.com/sirpdboy/luci-app-advanced
 git clone https://github.com/walkingsky/luci-wifidog luci-app-wifidog
+svn co https://github.com/garypang13/openwrt-packages/trunk/luci-app-gpsysupgrade
 svn co https://github.com/garypang13/openwrt-packages/trunk/gost
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn co https://github.com/frainzy1477/luci-app-clash/trunk ./luci-app-clash
@@ -37,10 +38,8 @@ svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns
 svn co https://github.com/immortalwrt/packages/trunk/net/smartdns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost
 svn co https://github.com/kenzok8/litte/trunk/luci-theme-argon_new
-svn co https://github.com/kenzok8/litte/trunk/luci-theme-opentopd_new
 svn co https://github.com/kenzok8/litte/trunk/luci-theme-atmaterial_new
-svn co https://github.com/kenzok8/litte/trunk/luci-theme-mcat
-svn co https://github.com/kenzok8/litte/trunk/luci-theme-tomato
+
 
 
 rm -rf ./*/.git
