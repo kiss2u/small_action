@@ -36,7 +36,7 @@ svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns
 svn co https://github.com/immortalwrt/packages/trunk/net/smartdns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost
-svn co https://github.com/kenzok8/jeii/trunk/luci-theme-argon_19.07
+svn co https://github.com/kenzok78/jeii/trunk/luci-theme-argon_19.07
 
 
 
