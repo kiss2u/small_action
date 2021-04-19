@@ -30,15 +30,13 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping
-svn co https://github.com/liuran001/openwrt-theme/trunk/luci-theme-argon-lr
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-aliddns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns
 svn co https://github.com/immortalwrt/packages/trunk/net/smartdns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gost
-svn co https://github.com/kenzok8/litte/trunk/luci-theme-argon_new
-svn co https://github.com/kenzok8/litte/trunk/luci-theme-atmaterial_new
+svn co https://github.com/kenzok8/jeii/trunk/luci-theme-argon_19.07
 
 
 
