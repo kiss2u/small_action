@@ -9,7 +9,7 @@ git clone https://github.com/jerrykuku/luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
-git clone https://github.com/zzsj0928/luci-app-serverchand
+git clone https://github.com/zzsj0928/luci-app-pushbot
 git clone https://github.com/BCYDTZ/luci-app-UUGameAcc
 git clone https://github.com/garypang13/luci-app-eqos
 git clone https://github.com/BoringCat/luci-app-mentohust
