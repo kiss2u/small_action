@@ -47,6 +47,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/shadowsocksr-libev
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-aliddns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome
