@@ -48,7 +48,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping
 svn co https://github.com/liuran001/openwrt-theme/trunk/luci-theme-argon-lr
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/shadowsocksr-libev
+svn co https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-aliddns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome

@@ -30,6 +30,7 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ipt2socks
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/kcptun
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/pdnsd-alt
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocks-rust
+svn co https://github.com/openwrt/packages/trunk/net/shadowsocks-libev
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/shadowsocksr-libev
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/simple-obfs
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks
@@ -47,7 +48,6 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/lean/shadowsocksr-libev
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-aliddns
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome
