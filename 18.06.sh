@@ -40,6 +40,7 @@ svn co https://github.com/xiaorouji/openwrt-passwall/trunk/tcping
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-go
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan-plus
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/trojan
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-core
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-plugin
