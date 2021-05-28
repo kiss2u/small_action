@@ -19,7 +19,7 @@ git clone https://github.com/sirpdboy/luci-app-advanced
 git clone https://github.com/ntlf9t/luci-app-easymesh
 git clone https://github.com/walkingsky/luci-wifidog luci-app-wifidog
 svn co https://github.com/garypang13/openwrt-packages/trunk/gost
-svn co https://github.com/kenzok78/my-packages/trunk/luci-app-gpsysupgrade
+svn co https://github.com/kenzok8/my-packages/trunk/luci-app-gpsysupgrade
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 svn co https://github.com/frainzy1477/luci-app-clash/trunk ./luci-app-clash
 svn co https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns/trunk/tencentcloud_ddns luci-app-tencentddns
