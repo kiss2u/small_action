@@ -1,5 +1,4 @@
 #!/bin/bash
-git clone https://github.com/garypang13/openwrt-bypass
 git clone https://github.com/garypang13/luci-app-dnsfilter
 git clone https://github.com/garypang13/luci-theme-edge
 git clone https://github.com/tty228/luci-app-serverchan
@@ -16,6 +15,9 @@ git clone https://github.com/project-lede/luci-app-godproxy
 git clone https://github.com/sirpdboy/luci-app-advanced
 git clone https://github.com/ntlf9t/luci-app-easymesh
 git clone https://github.com/walkingsky/luci-wifidog luci-app-wifidog
+svn co https://github.com/garypang13/openwrt-bypass/trunk/luci-app-bypass
+svn co https://github.com/garypang13/openwrt-bypass/trunk/lua-maxminddb
+svn co https://github.com/garypang13/openwrt-bypass/trunk/smartdns-le
 svn co https://github.com/kenzok8/my-packages/trunk/luci-app-gpsysupgrade
 svn co https://github.com/garypang13/openwrt-packages/trunk/gost
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
