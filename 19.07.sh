@@ -1,13 +1,11 @@
 #!/bin/bash
-git clone https://github.com/garypang13/luci-app-bypass
+git clone https://github.com/garypang13/openwrt-bypass
 git clone https://github.com/garypang13/luci-app-dnsfilter
-git clone https://github.com/garypang13/smartdns-le
 git clone https://github.com/garypang13/luci-theme-edge
 git clone https://github.com/tty228/luci-app-serverchan
 git clone https://github.com/jerrykuku/luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-vssr
-git clone https://github.com/jerrykuku/lua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone https://github.com/zzsj0928/luci-app-pushbot
 git clone https://github.com/BCYDTZ/luci-app-UUGameAcc
